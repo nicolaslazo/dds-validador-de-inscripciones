@@ -1,5 +1,7 @@
 package ar.com.nicolaslazo;
 
+import java.util.Set;
+
 public class Alumno {
     String nombre;
     int legajo;
