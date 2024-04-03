@@ -1,5 +1,7 @@
 package ar.com.nicolaslazo;
 
+import java.util.Set;
+
 public class Inscripcion {
     Alumno alumno;
     Set<Materia> asignaturas;
@@ -10,6 +12,6 @@ public class Inscripcion {
     }
 
     public boolean aprobada() {
-        return this.asignaturas.stream().allMatch(asignatura -> asignatura.cumpleDependencias(this.alumno))
+        return this.asignaturas.stream().allMatch(asignatura -> asignatura.cumpleDependencias(this.alumno));
     }
 }
