@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39ac39de-18d7-447b-9996-6d6cca8d1032" name="Changes" comment="Add MateriaTest.java">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ar/com/nicolaslazo/AlumnoTest.java" afterDir="false" />
+    <list default="true" id="39ac39de-18d7-447b-9996-6d6cca8d1032" name="Changes" comment="Add InscripcionTest.java">
       <change afterPath="$PROJECT_DIR$/src/test/java/ar/com/nicolaslazo/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/nicolaslazo/Alumno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/com/nicolaslazo/Alumno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/nicolaslazo/Inscripcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/com/nicolaslazo/Inscripcion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/nicolaslazo/Materia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/com/nicolaslazo/Materia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ar/com/nicolaslazo/AlumnoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ar/com/nicolaslazo/AlumnoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ar/com/nicolaslazo/InscripcionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ar/com/nicolaslazo/InscripcionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ar/com/nicolaslazo/MateriaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ar/com/nicolaslazo/MateriaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +36,7 @@
     <setting file="file://$USER_HOME$/.ideavimrc" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -41,29 +48,104 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.inscripciones.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/swaves/Uni/dds/java/inscripciones&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.maddyhome.idea.vim.ui.VimEmulationConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.AlumnoTest.executor": "Run",
+    "JUnit.InscripcionTest.executor": "Run",
+    "JUnit.MateriaTest.executor": "Run",
+    "JUnit.MateriaTest.materiaConDependenciaNoCumpleSiBasicaNoAprobada.executor": "Debug",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.inscripciones.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/swaves/Uni/dds/java/inscripciones/pom.xml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "com.maddyhome.idea.vim.ui.VimEmulationConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunManager" selected="JUnit.AlumnoTest">
+    <configuration name="AlumnoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="inscripciones" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ar.com.nicolaslazo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ar.com.nicolaslazo" />
+      <option name="MAIN_CLASS_NAME" value="ar.com.nicolaslazo.AlumnoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InscripcionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="inscripciones" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ar.com.nicolaslazo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ar.com.nicolaslazo" />
+      <option name="MAIN_CLASS_NAME" value="ar.com.nicolaslazo.InscripcionTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MateriaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="inscripciones" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ar.com.nicolaslazo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ar.com.nicolaslazo" />
+      <option name="MAIN_CLASS_NAME" value="ar.com.nicolaslazo.MateriaTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MateriaTest.materiaConDependenciaNoCumpleSiBasicaNoAprobada" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="inscripciones" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ar.com.nicolaslazo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ar.com.nicolaslazo" />
+      <option name="MAIN_CLASS_NAME" value="ar.com.nicolaslazo.MateriaTest" />
+      <option name="METHOD_NAME" value="materiaConDependenciaNoCumpleSiBasicaNoAprobada" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AlumnoTest" />
+        <item itemvalue="JUnit.MateriaTest" />
+        <item itemvalue="JUnit.MateriaTest.materiaConDependenciaNoCumpleSiBasicaNoAprobada" />
+        <item itemvalue="JUnit.InscripcionTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -83,7 +165,9 @@
       <workItem from="1712110108344" duration="3312000" />
       <workItem from="1712113432438" duration="336000" />
       <workItem from="1712113773607" duration="1173000" />
-      <workItem from="1712114954506" duration="1116000" />
+      <workItem from="1712114954506" duration="2506000" />
+      <workItem from="1712117739530" duration="2132000" />
+      <workItem from="1712165566707" duration="4127000" />
     </task>
     <task id="LOCAL-00001" summary="Implementacion terminada">
       <option name="closed" value="true" />
@@ -101,7 +185,31 @@
       <option name="project" value="LOCAL" />
       <updated>1712114442809</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add AlumnoTest.java">
+      <option name="closed" value="true" />
+      <created>1712116370320</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712116370320</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Actualizo workspace.xml por si las dudas">
+      <option name="closed" value="true" />
+      <created>1712116513417</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712116513417</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add InscripcionTest.java">
+      <option name="closed" value="true" />
+      <created>1712117572171</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712117572171</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +218,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implementacion terminada" />
     <MESSAGE value="Add MateriaTest.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add MateriaTest.java" />
+    <MESSAGE value="Add AlumnoTest.java" />
+    <MESSAGE value="Actualizo workspace.xml por si las dudas" />
+    <MESSAGE value="Add InscripcionTest.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add InscripcionTest.java" />
   </component>
 </project>
