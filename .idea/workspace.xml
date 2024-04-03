@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39ac39de-18d7-447b-9996-6d6cca8d1032" name="Changes" comment="Add InscripcionTest.java">
+    <list default="true" id="39ac39de-18d7-447b-9996-6d6cca8d1032" name="Changes" comment="Todos los tests arreglados">
       <change afterPath="$PROJECT_DIR$/src/test/java/ar/com/nicolaslazo/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/nicolaslazo/Alumno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/com/nicolaslazo/Alumno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/nicolaslazo/Inscripcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/com/nicolaslazo/Inscripcion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/nicolaslazo/Materia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/com/nicolaslazo/Materia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ar/com/nicolaslazo/AlumnoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ar/com/nicolaslazo/AlumnoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ar/com/nicolaslazo/InscripcionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ar/com/nicolaslazo/InscripcionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ar/com/nicolaslazo/MateriaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ar/com/nicolaslazo/MateriaTest.java" afterDir="false" />
@@ -167,7 +164,7 @@
       <workItem from="1712113773607" duration="1173000" />
       <workItem from="1712114954506" duration="2506000" />
       <workItem from="1712117739530" duration="2132000" />
-      <workItem from="1712165566707" duration="4127000" />
+      <workItem from="1712165566707" duration="5068000" />
     </task>
     <task id="LOCAL-00001" summary="Implementacion terminada">
       <option name="closed" value="true" />
@@ -209,11 +206,62 @@
       <option name="project" value="LOCAL" />
       <updated>1712117572171</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Actualización de datos de proyecto que no entiendo">
+      <option name="closed" value="true" />
+      <created>1712172131334</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712172131334</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Linting para Inscripcion.java">
+      <option name="closed" value="true" />
+      <created>1712172213246</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712172213246</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Materia.cumpleDependencias arreglada">
+      <option name="closed" value="true" />
+      <created>1712172242506</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1712172242506</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Linting para Alumno.java">
+      <option name="closed" value="true" />
+      <created>1712172256220</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712172256220</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Todos los tests arreglados">
+      <option name="closed" value="true" />
+      <created>1712172275773</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712172275773</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implementacion terminada" />
@@ -221,6 +269,11 @@
     <MESSAGE value="Add AlumnoTest.java" />
     <MESSAGE value="Actualizo workspace.xml por si las dudas" />
     <MESSAGE value="Add InscripcionTest.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add InscripcionTest.java" />
+    <MESSAGE value="Actualización de datos de proyecto que no entiendo" />
+    <MESSAGE value="Linting para Inscripcion.java" />
+    <MESSAGE value="Materia.cumpleDependencias arreglada" />
+    <MESSAGE value="Linting para Alumno.java" />
+    <MESSAGE value="Todos los tests arreglados" />
+    <option name="LAST_COMMIT_MESSAGE" value="Todos los tests arreglados" />
   </component>
 </project>
