@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 class AlumnoTest {
     @Test
     void alumnoInstancia() {
-        Alumno alumno = new Alumno("Juan", 1, new HashSet<Materia>());
+        Alumno alumno = new Alumno("Juan", 1, new HashSet<>());
         Assertions.assertInstanceOf(Alumno.class, alumno);
     }
 }

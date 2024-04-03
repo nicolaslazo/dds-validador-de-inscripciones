@@ -4,7 +4,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 /*
@@ -15,17 +14,17 @@ import org.junit.jupiter.api.Test;
 class InscripcionTest {
     @Test
     void inscripcionInstancia() {
-        Materia materiaBasica = new Materia("Sin dependencias", new HashSet<Materia>());
+        Materia materiaBasica = new Materia("Sin dependencias", new HashSet<>());
 
-        Set<Materia> dependenciaDeBasica = new HashSet<Materia>();
+        Set<Materia> dependenciaDeBasica = new HashSet<>();
         dependenciaDeBasica.add(materiaBasica);
         Materia materiaConDependencia = new Materia("Depende de basica", dependenciaDeBasica);
 
-        Set<Materia> basicaAprobada = new HashSet<Materia>();
+        Set<Materia> basicaAprobada = new HashSet<>();
         basicaAprobada.add(materiaBasica);
         Alumno alumnoBasico = new Alumno("Juan", 1, basicaAprobada);
 
-        Set<Materia> materiasSolicitadas = new HashSet<Materia>();
+        Set<Materia> materiasSolicitadas = new HashSet<>();
         materiasSolicitadas.add(materiaConDependencia);
         Inscripcion inscripcion = new Inscripcion(alumnoBasico, materiasSolicitadas);
 
@@ -34,17 +33,17 @@ class InscripcionTest {
 
     @Test
     void inscripcionDeMateriamateriaConDependenciaAprobadaEsValida() {
-        Materia materiaBasica = new Materia("Sin dependencias", new HashSet<Materia>());
+        Materia materiaBasica = new Materia("Sin dependencias", new HashSet<>());
 
-        Set<Materia> dependenciaDeBasica = new HashSet<Materia>();
+        Set<Materia> dependenciaDeBasica = new HashSet<>();
         dependenciaDeBasica.add(materiaBasica);
         Materia materiaConDependencia = new Materia("Depende de basica", dependenciaDeBasica);
 
-        Set<Materia> basicaAprobada = new HashSet<Materia>();
+        Set<Materia> basicaAprobada = new HashSet<>();
         basicaAprobada.add(materiaBasica);
         Alumno alumnoBasico = new Alumno("Juan", 1, basicaAprobada);
 
-        Set<Materia> materiasSolicitadas = new HashSet<Materia>();
+        Set<Materia> materiasSolicitadas = new HashSet<>();
         materiasSolicitadas.add(materiaConDependencia);
         Inscripcion inscripcion = new Inscripcion(alumnoBasico, materiasSolicitadas);
 
