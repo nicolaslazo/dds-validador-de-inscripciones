@@ -1,27 +1,50 @@
-class MateriaTest {
-    const Materia basica = new Materia("Sin dependencias", new HashSet<Materia>());
+package ar.com.nicolaslazo;
 
-    const dependenciaDeBasica = new HashSet<Materia>();
-    depedenciaDeBasica.add(basica);
-    const Materia conDependencia = new Materia("Depende de basica", dependenciaDeBasica);
+import java.util.Set;
+import java.util.HashSet;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+class MateriaTest {
+    @Test
+    void materiaInstancia() {
+        Materia materiaBasica = new Materia("Sin dependencias", new HashSet<Materia>());
+        Assertions.assertInstanceOf(Materia.class, materiaBasica);
+    }
 
     @Test
     void materiaBasicaCumpleDependencias() {
-        assertEquals(basica.cumpleDependencias(null), true);
+        Materia materiaBasica = new Materia("Sin dependencias", new HashSet<Materia>());
+        Assertions.assertTrue(materiaBasica.cumpleDependencias(null));
     }
 
     @Test
     void materiaConDependenciaNoCumpleSiBasicaNoAprobada() {
-        const Alumno alumno = new Alumno("Juan", 1, new HashSet<Materia>());
+        Materia materiaBasica = new Materia("Sin dependencias", new HashSet<Materia>());
 
-        assertEquals(conDependencia.cumpleDependencias(alumno), false);
+        Set<Materia> dependenciaDeBasica = new HashSet<Materia>();
+        dependenciaDeBasica.add(materiaBasica);
+        Materia conDependencia = new Materia("Depende de materiaBasica", dependenciaDeBasica);
+
+        Alumno alumno = new Alumno("Juan", 1, new HashSet<Materia>());
+
+        Assertions.assertTrue(alumno.aprobadas.isEmpty());
+        Assertions.assertFalse(conDependencia.cumpleDependencias(alumno));
     }
 
     @Test
     void materiaConDependenciaCumpleSiBasicaAprobada() {
-        const Alumno alumno = new Alumno("Juan", 1, new HashSet<Materia>());
-        alumno.aprobadas.add(basica);
+        Materia materiaBasica = new Materia("Sin dependencias", new HashSet<Materia>());
 
-        assertEquals(conDependencia.cumpleDependencias(alumno), true);
+        Alumno alumno = new Alumno("Juan", 1, new HashSet<Materia>());
+        alumno.aprobadas.add(materiaBasica);
+
+        Set<Materia> dependenciaDeBasica = new HashSet<Materia>();
+        dependenciaDeBasica.add(materiaBasica);
+        Materia conDependencia = new Materia("Depende de materiaBasica", dependenciaDeBasica);
+
+        Assertions.assertTrue(conDependencia.cumpleDependencias(alumno));
     }
 }
