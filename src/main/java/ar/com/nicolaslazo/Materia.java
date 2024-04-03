@@ -1,5 +1,7 @@
 package ar.com.nicolaslazo;
 
+import java.util.Set;
+
 public class Materia {
     String nombre;
     Set<Materia> dependencias;
@@ -11,6 +13,6 @@ public class Materia {
 
     public boolean cumpleDependencias(Alumno alumno) {
         boolean noTieneDependencias = this.dependencias.isEmpty();
-        return noTieneDependencia or this.dependencias.stream().allMatch(materia -> materia.cumpleDependencias(alumno))
+        return noTieneDependencias || alumno.getAprobadas().containsAll(this.dependencias);
     }
 }
